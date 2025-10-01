@@ -30,7 +30,6 @@ def agree(w1,w2):
     if w1.tag.case and w2.tag.case:
         if w1.tag.case not in str(w2.tag) and w2.tag.case not in str(w1.tag):
             return False
-
     return True
 
 for i in range(len(parsed_tokens)-1):
