@@ -36,7 +36,7 @@ for i in range(len(parsed_tokens)-1):
     w1, w2 = parsed_tokens[i], parsed_tokens[i+1]
     if not w1 or not w2:
         continue
-    if not (w1.tag.POS in {"NOUN","ADJF"} and w2.tag.POS in {"NOUN","ADJ"}):
+    if not (w1.tag.POS in {"NOUN","ADJF"} and w2.tag.POS in {"NOUN","ADJF"}):
         continue
 
     if agree(w1,w2):
