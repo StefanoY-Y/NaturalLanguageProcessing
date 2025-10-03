@@ -28,7 +28,7 @@ def agree(w1,w2):
             return False
 
     if w1.tag.case is not None and w2.tag.case is not None:
-        if w1.tag.case != w2.tag.case:
+        if w1.tag.case != w2.tag.case :
             return False
     return True
 
