@@ -17,7 +17,7 @@ def parse_word(word):
         return parsed[0]
     return None
 
-parsed_tokens = [parse_word(t) for t in tokens if t.isalpha()]
+parsed_tokens = [parse_word(t) for t in tokens]
 
 def agree(w1,w2):
     if w1.tag.number != w2.tag.number:
