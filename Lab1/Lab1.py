@@ -23,12 +23,12 @@ def agree(w1,w2):
     if w1.tag.number != w2.tag.number:
         return False
 
-    if w1.tag.gender and w2.tag.gender:
+    if w1.tag.gender is not None and w2.tag.gender is not None:
         if w1.tag.gender != w2.tag.gender:
             return False
 
-    if w1.tag.case and w2.tag.case:
-        if w1.tag.case not in str(w2.tag) and w2.tag.case not in str(w1.tag):
+    if w1.tag.case is not None and w2.tag.case is not None:
+        if w1.tag.case != w2.tag.case :
             return False
     return True
 
